@@ -1,0 +1,134 @@
+
+baseURL = "https://ssvproff.netlify.app/"
+title = "SSVproff - Surgery & AI in Medicine"
+theme = "papermod"
+defaultContentLanguage = "ru"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    weight = 1
+    title = "SSVproff - Хирургия и ИИ в Медицине"
+    
+    [languages.ru.params]
+      description = "Профессиональный научный блог и портфолио по хирургии, онкологии, криотерапии и искусственному интеллекту в медицине"
+      author = "Сергей В. Сушков"
+      
+    [[languages.ru.menu.main]]
+      name = "Главная"
+      url = "/"
+      weight = 1
+    
+    [[languages.ru.menu.main]]
+      name = "О себе"
+      url = "/about/"
+      weight = 2
+    
+    [[languages.ru.menu.main]]
+      name = "Публикации"
+      url = "/publications/"
+      weight = 3
+    
+    [[languages.ru.menu.main]]
+      name = "Блог"
+      url = "/blog/"
+      weight = 4
+    
+    [[languages.ru.menu.main]]
+      name = "AI Lab"
+      url = "/ai-lab/"
+      weight = 5
+    
+    [[languages.ru.menu.main]]
+      name = "Контакты"
+      url = "/contact/"
+      weight = 6
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "SSVproff - Surgery & AI in Medicine"
+    
+    [languages.en.params]
+      description = "Professional scientific blog and portfolio on surgery, oncology, cryotherapy, and artificial intelligence in medicine"
+      author = "Sergey V. Sushkov"
+      
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/en/"
+      weight = 1
+    
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 2
+    
+    [[languages.en.menu.main]]
+      name = "Publications"
+      url = "/en/publications/"
+      weight = 3
+    
+    [[languages.en.menu.main]]
+      name = "Blog"
+      url = "/en/blog/"
+      weight = 4
+    
+    [[languages.en.menu.main]]
+      name = "AI Lab"
+      url = "/en/ai-lab/"
+      weight = 5
+    
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 6
+
+[params]
+  env = "production"
+  author = "Сергей В. Сушков / Sergey V. Sushkov"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Добро пожаловать на SSVproff"
+    Content = "Профессиональная платформа по хирургии, онкологии и искусственному интеллекту в медицине"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Serg2206"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:ssvproff@example.com"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    style = "monokai"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
